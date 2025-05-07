@@ -1,0 +1,10 @@
+.crazy-word {
+    position: absolute;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background-color: rgba(240, 222, 195, 0.9);
+    transition: transform 3s ease-in-out;
+    white-space: nowrap;
+    pointer-events: none;
+    }
