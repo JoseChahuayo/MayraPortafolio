@@ -1,46 +1,63 @@
 <main>
     <div class="max-w-7xl  mx-auto ">
         <div>
-            <h1 class="text-[#f0dec3] text-3xl text-center mb-4">BIENVENIDOS</h1>
-          </div>
-        
-          <div class="flex flex-col max-w-full md:flex-row justify-around items-center text-[#9fc9de] py-8">
-            <div class="text-center md:w-1/2 md:pr-6">
-              <p class="mb-2">Hola, mi nombre es:</p>
-              <h1 class="text-2xl font-bold mb-2">Mayra Macuri Lopez</h1>
-              <p>Descripción</p>
-            </div>
-            <div class="text-center md:w-1/2">
-              <img src="https://img.freepik.com/vector-gratis/personaje-dibujos-animados-gatito-ojos-dulces_1308-135596.jpg?w=360"
-                   alt="Imagen de Mayra"
-                   class="max-w-[200px] rounded-full mx-auto">
-            </div>
-          </div>
-        
+            <h1 class="text-[#f0dec3] text-3xl text-center mb-4 font-bold" style="font-family: 'Comic Sans MS', cursive, sans-serif;">BIENVENIDOS</h1>
+        </div>
 
-        
+        <div class="flex flex-col max-w-full md:flex-row justify-around items-center text-[#9fc9de] py-8">
+          <div class="md:w-1/2 md:pr-6 text-left">
+            <p class="mb-2 text-5xl">Hola, soy</p>
+            <h1 class="text-5xl font-bold mb-2" style="font-family: 'Playfair Display', serif;">MAYRA SHADAY</h1>
+            <h1 class="text-5xl font-bold mb-4" style="font-family: 'Playfair Display', serif;">MACURI LÓPEZ</h1>
+
+            <ul class="pl-2 space-y-1">
+                <li>🟊 Estudiante de Ingeniería de Sistemas</li>
+                <li>🟊 Certificada en: Bizagi Modeler, Power BI, HTML</li>
+                <li>🟊 Experta en componentes de computadora y levantamiento de procesos</li>
+                <li>🟊 Diseño web responsivo con HTML/CSS para interfaces de procesos</li>
+            </ul>
+          </div>
+          <div class="text-center md:w-1/2">
+             <img src="/src/assets/Foto.jpeg"
+                  alt="Imagen de Mayra"
+                  class="max-w-[200px] rounded-full mx-auto">
+          </div>
+        </div>
+ 
+
           <div class="text-[#9fc9de] text-center py-8">
-            <h1 class="text-2xl mb-4">SOBRE MI</h1>
+            <h1 class="text-2xl mb-4 text-[#f0dec3]" style="font-family: 'Comic Sans MS', cursive, sans-serif;">&gt;/&lt; HABILIDADES</h1>
             <div class="flex flex-wrap justify-center gap-6">
-              <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://img.freepik.com/vector-gratis/pequeno-personaje-dibujos-animados-lindo-gato_1308-138075.jpg?semt=ais_hybrid&w=740"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Habilidades</h2>
-                <p>Descripción breve de la habilidad.</p>
-              </div>
-              <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://img.freepik.com/vector-gratis/pequeno-personaje-dibujos-animados-lindo-gato_1308-138075.jpg?semt=ais_hybrid&w=740"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Habilidades</h2>
-                <p>Descripción breve de la habilidad.</p>
+               <!-- Ejemplo de una habilidad -->
+
+              <div class="flex flex-wrap gap-4 justify-center">
+                @for (skill of skills; track skill.name) {
+                  <div class="flex flex-col items-center space-y-2">
+                    <svg class="w-24 h-24" viewBox="0 0 36 36">
+                      <circle cx="18" cy="18" r="17" stroke="#f0dec3" stroke-width="0.5" fill="none" />
+                      <circle cx="18" cy="18" r="15.9155" fill="none" />
+                      <circle cx="18" cy="18" r="14.9155" stroke="#f0dec3" stroke-width="0.5" fill="none" />
+                      
+                      <path 
+                        [attr.stroke-dasharray]="skill.percent + ', 100'" 
+                        stroke="#f0dec3" 
+                        stroke-width="3" 
+                        fill="none"
+                        d="M18 2.0845 a 15.9155 15.9155 0 1 1 0 31.831 a 15.9155 15.9155 0 1 1 0 -31.831" 
+                      />
+                      <text x="18" y="20.5" font-size="8" class="font-semibold fill-[#9fc9de]" text-anchor="middle" dominant-baseline="middle">
+                        {{ skill.percent }}%
+                      </text>
+                    </svg>
+                    <p class="text-sm font-semibold">{{ skill.name }}</p>
+                  </div>
+                }
               </div>
             </div>
           </div>
         
           <div class="text-[#f0dec3] text-center py-8">
-            <h1 class="text-2xl mb-4">Mis aptitudes</h1>
+            <h1 class="text-2xl mb-4 text-[#f0dec3]" style="font-family: 'Comic Sans MS', cursive, sans-serif;" >&gt;/&lt; APTITUDES</h1>
           </div>
           <div class="relative w-full h-[300px]  overflow-hidden rounded text-[#274d60]">
             @for (word of words; track word.text) {
@@ -56,7 +73,7 @@
           
 
           <div class="text-[#f0dec3] text-center py-8">
-            <h1 class="text-2xl mb-4">EXPERIENCIA</h1>
+            <h1 class="text-2xl mb-4" style="font-family: 'Comic Sans MS', cursive, sans-serif;" >&gt;/&lt; ESTUDIOS Y EXPERIENCIA</h1>
           
             <div class="mb-6">
               <ul class="flex flex-wrap justify-center gap-4">
@@ -72,9 +89,10 @@
               </ul>
             </div>
           
-            @if (selectedExperience !== '') {
+           @if (selectedExperienceData) {
               <div class="max-w-[800px] mx-auto bg-white/10 p-6 rounded text-left">
-                <p>{{ selectedDescription }}</p>
+                <h2 class="text-xl font-semibold mb-2 text-[#f0dec3]">{{ selectedExperienceData.cargo }}</h2>
+                <p class="whitespace-pre-line">{{ selectedExperienceData.description }}</p>
               </div>
             }
           </div>
@@ -82,5 +100,7 @@
           
     </div>
     
+    
   </main>
+  
   
