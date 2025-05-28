@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-semana6',
+  selector: 'app-reflexion',
   imports: [],
-  templateUrl: './semana6.component.html',
+  templateUrl: './reflexion.component.html',
 })
-export class Semana6Component {
+export class ReflexionComponent {
   title = '';
   subtitle = '';
 
-  private fullTitle = 'SEMANA 6';
-  private fullSubtitle = 'BOOSTRAP, TAILWIND Y JAVASCRIPT BÁSICO';
+  private fullTitle = 'Reflexiones';
+  private fullSubtitle = 'REACT';
 
   ngOnInit(): void {
     this.typeWriter(this.fullTitle, 'title', 100).then(() => {

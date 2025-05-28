@@ -1,145 +1,45 @@
 <main>
-    <div class="max-w-7xl  mx-auto"  >
-        <div class="text-[#9fc9de] text-center py-8">
-            <h1 class="text-2xl mb-4" style="font-family: 'Comic Sans MS', cursive, sans-serif;">&gt;/&lt; SEMANAS</h1>
-            <div class="flex flex-wrap justify-center gap-6">
-              <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/2147489778/images/Y3RFbrVrTvG0GlYFjcXP_40._shutterstock_497978929.jpg"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 1</h2>
-                <p>Presentación Syllabus</p>
+  <div class="max-w-7xl  mx-auto"  >
+    <div class="text-[#9fc9de] text-center py-8">
+      <h1 class="text-2xl mb-4" style="font-family: 'Comic Sans MS', cursive, sans-serif;">&gt;/&lt; SEMANAS</h1>
+        <div class="flex flex-wrap justify-center gap-6">
+          @for (semana of semanas; track semana.titulo) {
+            <a [routerLink] = "semana.ruta">
+              <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center shadow-md">
+                <img [src]="semana.imagen"
+                    [alt]="semana.titulo"
+                    class="w-[100px] h-[100px] object-cover rounded-full mx-auto mb-2">
+                <h2 class="text-xl font-semibold">{{ semana.titulo }}</h2>
+                <p>{{ semana.descripcion }}</p>
               </div>
-              <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://www.ensalza.com/blog/wp-content/uploads/frontend-y-backend.png"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 2</h2>
-                <p>Teoría FrontEnd y Backend</p>
-              </div>
-              <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://i.blogs.es/9af51d/emmet/1024_2000.webp"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 3</h2>
-                <p>Código Emmet</p>
-              </div>
-              <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://static.wixstatic.com/media/cae29b_583a314283924629ab7ede58d33ba4e2~mv2.jpg/v1/fill/w_925,h_520,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/cae29b_583a314283924629ab7ede58d33ba4e2~mv2.jpg"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 4</h2>
-                <p>Teoría y Práctica HTML y CSS</p>
-              </div>
-              <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://w3sniff.com/common/article/bootstrap-vs-tailwindcss1.png"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 5</h2>
-                <p>Teoría y Práctica Boostrap, Tailwind y Javascript</p>
-              </div>
-              <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://media.licdn.com/dms/image/v2/C4E12AQGoAiCvhcQWoA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1593179967215?e=2147483647&v=beta&t=WlGbGUf9QzF3JBKnILbh_MsfZbyh6UzR2l22gsxxWhs"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 6</h2>
-                <p>Teoría y Aplicación React</p>
-              </div>
-              <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/perritos-de-instagram-1616062929.jpg?crop=0.492xw:0.908xh;0.508xw,0.0917xh&resize=980:*"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 7</h2>
-                <p>Descripción breve de la habilidad.</p>
-              </div>
-
-             <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/perritos-de-instagram-1616062929.jpg?crop=0.492xw:0.908xh;0.508xw,0.0917xh&resize=980:*"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 8</h2>
-                <p>Descripción breve de la habilidad.</p>
-              </div>
-
-             <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/perritos-de-instagram-1616062929.jpg?crop=0.492xw:0.908xh;0.508xw,0.0917xh&resize=980:*"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 9</h2>
-                <p>Descripción breve de la habilidad.</p>
-              </div>
-
-             <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/perritos-de-instagram-1616062929.jpg?crop=0.492xw:0.908xh;0.508xw,0.0917xh&resize=980:*"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 10</h2>
-                <p>Descripción breve de la habilidad.</p>
-              </div>
-             <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/perritos-de-instagram-1616062929.jpg?crop=0.492xw:0.908xh;0.508xw,0.0917xh&resize=980:*"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 11</h2>
-                <p>Descripción breve de la habilidad.</p>
-              </div>
-      
-             <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/perritos-de-instagram-1616062929.jpg?crop=0.492xw:0.908xh;0.508xw,0.0917xh&resize=980:*"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 12</h2>
-                <p>Descripción breve de la habilidad.</p>
-              </div>
-
-             <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/perritos-de-instagram-1616062929.jpg?crop=0.492xw:0.908xh;0.508xw,0.0917xh&resize=980:*"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 13</h2>
-                <p>Descripción breve de la habilidad.</p>
-              </div>
-
-             <div class="bg-[#f0dec3] text-[#274d60] p-4 rounded-lg w-[250px] text-center">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/perritos-de-instagram-1616062929.jpg?crop=0.492xw:0.908xh;0.508xw,0.0917xh&resize=980:*"
-                     alt="Habilidad 1"
-                     class="w-[100px] rounded-full mx-auto mb-2">
-                <h2 class="text-xl font-semibold">Semana 14</h2>
-                <p>Descripción breve de la habilidad.</p>
-              </div>
-    
-            </div>
+            </a>
+          }
         </div>
-<!-- Tablero Kanban - Versión simplificada y robusta -->
-<div class="flex flex-wrap gap-6 justify-center">
-  @for (column of columns; track column.id) {
-    <div class="bg-gray-100 p-4 rounded-lg w-80 shadow">
-      <h3 class="text-lg font-bold mb-4 text-center">{{ column.title }}</h3>
-
-      <!-- Zona donde se pueden soltar tareas -->
-      <div
-        class="min-h-[200px] p-2 space-y-3 bg-white rounded shadow-inner"
-        (drop)="onDrop(column.id)"
-        (dragover)="onDragOver($event)"
-      >
-        <!-- Lista de tareas -->
-        @for (task of column.tasks; track task.id) {
-          <div
-            class="bg-blue-100 p-3 rounded shadow cursor-move hover:bg-blue-200 transition"
-            draggable="true"
-            (dragstart)="onDragStart(task)"
-          >
-            <p class="font-semibold">{{ task.title }}</p>
-            <span class="text-sm text-gray-600">{{ task.week }}</span>
-          </div>
-        }
-      </div>
+      
     </div>
-  }
-</div>
-
-  
-
-
+    <div class="flex flex-wrap gap-6 justify-center">
+      @for (column of columns; track column.id) {
+        <div class="bg-gray-100 p-4 rounded-lg w-80 shadow">
+          <h3 class="text-lg font-bold mb-4 text-center">{{ column.title }}</h3>
+          <div
+            class="min-h-[200px] p-2 space-y-3 bg-white rounded shadow-inner"
+            (drop)="onDrop(column.id)"
+            (dragover)="onDragOver($event)"
+          >
+            @for (task of column.tasks; track task.id) {
+              <div
+                class="bg-blue-100 p-3 rounded shadow cursor-move hover:bg-blue-200 transition"
+                draggable="true"
+                (dragstart)="onDragStart(task)"
+              >
+                <p class="font-semibold">{{ task.title }}</p>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
   </div>
+  <router-outlet></router-outlet>
 </main>
+

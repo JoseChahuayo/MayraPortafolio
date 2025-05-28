@@ -1,0 +1,32 @@
+<main class="max-w-6xl mx-auto px-6 py-10 space-y-10">
+
+    <div class="bg-gradient-to-r from-sky-950 via-[#f0dec3] to-sky-950 shadow-xl rounded-2xl text-center p-6 transition hover:scale-[1.02] duration-300 font-sans">
+      <h1 class="text-3xl font-bold text-[#274d60] mb-2">{{ title }}</h1>
+      <p class="text-stone-700 text-3xl font-semibold">{{ subtitle }}</p>
+    </div>
+
+
+    <div class="bg-gradient-to-br from-sky-950 to-[#f0dec3] shadow-xl rounded-2xl p-6 space-y-4 transition hover:scale-[1.02] duration-300 animate-gradient-to-solid text-center">
+      <p class="text-slate-200">
+        Los Hooks en React son funciones que permiten a los componentes funcionales acceder a características como el estado (useState), efectos secundarios (useEffect), contexto global (useContext), lógica compleja de estado (useReducer), referencias (useRef), y más. Fueron introducidos en la versión 16.8 de React para evitar el uso exclusivo de componentes de clase, haciendo el código más limpio, reutilizable y fácil de mantener.
+      </p>
+
+    </div>
+
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="bg-gradient-to-br from-sky-950 to-[#f0dec3] shadow-xl rounded-2xl p-6 transition hover:scale-[1.02] duration-300">
+        <h2 class="text-2xl font-bold text-[#f0dec3] mb-2">¿Qué aprendimos?</h2>
+        <p class="text-slate-200 text-justify">
+          Aprendimos a usar los principales Hooks que React ofrece. Usamos useState para manejar datos y estados locales del componente. Con useEffect aprendimos a ejecutar efectos secundarios, como llamadas a APIs o manipulaciones del DOM. También vimos useContext, que permite compartir datos entre componentes sin necesidad de pasar props manualmente. Aprendimos a utilizar useReducer como una alternativa a useState para manejar estados complejos. Además, exploramos otros Hooks como useRef, useNavigate, useParams, entre otros, para mejorar la funcionalidad de nuestras interfaces. Comprendimos la diferencia entre state y props, y cómo deben usarse correctamente. Por último, aprendimos a crear Custom Hooks que encapsulan lógica reutilizable y a organizar el código para hacerlo más mantenible.
+        </p>
+      </div>
+
+      <div class="bg-gradient-to-br from-sky-950 to-[#f0dec3]  shadow-xl rounded-2xl p-6 reveal transition hover:scale-[1.02] duration-300">
+        <h2 class="text-2xl font-bold text-[#f0dec3] mb-2">¿Cómo lo aprendimos?</h2>
+        <p class="text-slate-200 drop-shadow-md text-justify">
+          El aprendizaje fue a través de una combinación de teoría, ejemplos prácticos y ejercicios implementados paso a paso. Primero, comprendimos cada Hook, desde su sintaxis hasta su propósito específico. Realizamos ejemplos sencillos para observar cómo la interfaz reacciona ante cambios de estado. Implementamos un CRUD completo usando useContext y useReducer, lo que reforzó nuestra habilidad para manejar datos dinámicos y flujos de datos compartidos. Probamos cómo los componentes responden a cambios de estado y cómo optimizar el rendimiento configurando correctamente las dependencias. Finalmente, exploramos buenas prácticas para crear Custom Hooks, tales como nombrarlos apropiadamente, mantenerlos enfocados en una sola tarea y escribir pruebas. Todo el proceso fue progresivo, lo que nos permitió afianzar el conocimiento mediante la experiencia directa en la codificación.
+        </p>
+      </div>
+    </div>
+</main>
